@@ -7,9 +7,9 @@ attr_accessor :word
    end
 
    def match(string)
-     string.select do |word| word.split("").sort == word.split("").sort
+     string.select do |w| 
+       w.split("").sort == word.split("").sort
 end
 end
 end
-#some_word.split("") == word.split("")
-#  word.match(%w(some_word))
+
